@@ -1,0 +1,5 @@
+%div{ 'ng-app' => 'BlrAnalytics', 'ng-controller' => 'myCtrl' }
+  %ul
+    %li{ 'ng-repeat' => 'user in users' }
+      {{user.name}} - {{user.nic_name}}
+  =link_to 'new_use', new_user_path    

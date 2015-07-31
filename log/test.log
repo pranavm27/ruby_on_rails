@@ -1,0 +1,1283 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "nic_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150709045236')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:34.165349"], ["updated_at", "2015-07-29 15:26:34.165349"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:34.180344"], ["updated_at", "2015-07-29 15:26:34.180344"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:34.185836"], ["updated_at", "2015-07-29 15:26:34.185836"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:34.190931"], ["updated_at", "2015-07-29 15:26:34.190931"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:34.194221"], ["updated_at", "2015-07-29 15:26:34.194221"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:37.768466"], ["updated_at", "2015-07-29 15:26:37.768466"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:37.774734"], ["updated_at", "2015-07-29 15:26:37.774734"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:37.778133"], ["updated_at", "2015-07-29 15:26:37.778133"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:37.793930"], ["updated_at", "2015-07-29 15:26:37.793930"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:26:37.799432"], ["updated_at", "2015-07-29 15:26:37.799432"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:29:52.754955"], ["updated_at", "2015-07-29 15:29:52.754955"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:29:52.769471"], ["updated_at", "2015-07-29 15:29:52.769471"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:29:52.806681"], ["updated_at", "2015-07-29 15:29:52.806681"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:29:52.809509"], ["updated_at", "2015-07-29 15:29:52.809509"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:29:52.812214"], ["updated_at", "2015-07-29 15:29:52.812214"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:30:06.469410"], ["updated_at", "2015-07-29 15:30:06.469410"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:30:06.475800"], ["updated_at", "2015-07-29 15:30:06.475800"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:30:06.479349"], ["updated_at", "2015-07-29 15:30:06.479349"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:30:06.525241"], ["updated_at", "2015-07-29 15:30:06.525241"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bruce Wayne"], ["nic_name", "Bat Man"], ["created_at", "2015-07-29 15:30:06.531189"], ["updated_at", "2015-07-29 15:30:06.531189"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:40:42.811303"], ["updated_at", "2015-07-29 15:40:42.811303"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:40:42.827327"], ["updated_at", "2015-07-29 15:40:42.827327"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:40:42.864314"], ["updated_at", "2015-07-29 15:40:42.864314"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:40:42.868820"], ["updated_at", "2015-07-29 15:40:42.868820"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:40:42.871545"], ["updated_at", "2015-07-29 15:40:42.871545"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:02.107517"], ["updated_at", "2015-07-29 15:41:02.107517"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:02.114515"], ["updated_at", "2015-07-29 15:41:02.114515"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:02.119011"], ["updated_at", "2015-07-29 15:41:02.119011"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:02.161621"], ["updated_at", "2015-07-29 15:41:02.161621"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:02.166465"], ["updated_at", "2015-07-29 15:41:02.166465"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:48.447579"], ["updated_at", "2015-07-29 15:41:48.447579"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:48.463131"], ["updated_at", "2015-07-29 15:41:48.463131"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:48.504034"], ["updated_at", "2015-07-29 15:41:48.504034"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:48.508844"], ["updated_at", "2015-07-29 15:41:48.508844"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:48.512579"], ["updated_at", "2015-07-29 15:41:48.512579"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:41:48.516439"], ["updated_at", "2015-07-29 15:41:48.516439"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:43:58.317667"], ["updated_at", "2015-07-29 15:43:58.317667"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:43:58.333287"], ["updated_at", "2015-07-29 15:43:58.333287"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:43:58.338673"], ["updated_at", "2015-07-29 15:43:58.338673"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:43:58.343605"], ["updated_at", "2015-07-29 15:43:58.343605"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:43:58.348015"], ["updated_at", "2015-07-29 15:43:58.348015"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:43:58.351510"], ["updated_at", "2015-07-29 15:43:58.351510"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:44:53.585983"], ["updated_at", "2015-07-29 15:44:53.585983"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:44:53.593727"], ["updated_at", "2015-07-29 15:44:53.593727"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:44:53.598556"], ["updated_at", "2015-07-29 15:44:53.598556"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:44:53.602941"], ["updated_at", "2015-07-29 15:44:53.602941"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:44:53.606528"], ["updated_at", "2015-07-29 15:44:53.606528"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:44:53.609847"], ["updated_at", "2015-07-29 15:44:53.609847"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:04.550674"], ["updated_at", "2015-07-29 15:45:04.550674"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:04.565769"], ["updated_at", "2015-07-29 15:45:04.565769"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:04.571364"], ["updated_at", "2015-07-29 15:45:04.571364"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:04.576225"], ["updated_at", "2015-07-29 15:45:04.576225"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:04.580489"], ["updated_at", "2015-07-29 15:45:04.580489"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:04.584428"], ["updated_at", "2015-07-29 15:45:04.584428"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.922287"], ["updated_at", "2015-07-29 15:45:40.922287"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.938426"], ["updated_at", "2015-07-29 15:45:40.938426"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.943858"], ["updated_at", "2015-07-29 15:45:40.943858"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.948901"], ["updated_at", "2015-07-29 15:45:40.948901"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.950539"], ["updated_at", "2015-07-29 15:45:40.950539"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.955109"], ["updated_at", "2015-07-29 15:45:40.955109"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.956320"], ["updated_at", "2015-07-29 15:45:40.956320"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.959375"], ["updated_at", "2015-07-29 15:45:40.959375"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:45:40.960531"], ["updated_at", "2015-07-29 15:45:40.960531"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.721628"], ["updated_at", "2015-07-29 15:46:07.721628"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.736727"], ["updated_at", "2015-07-29 15:46:07.736727"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.742187"], ["updated_at", "2015-07-29 15:46:07.742187"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.747062"], ["updated_at", "2015-07-29 15:46:07.747062"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.748214"], ["updated_at", "2015-07-29 15:46:07.748214"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.752747"], ["updated_at", "2015-07-29 15:46:07.752747"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.753982"], ["updated_at", "2015-07-29 15:46:07.753982"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.757300"], ["updated_at", "2015-07-29 15:46:07.757300"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:07.758945"], ["updated_at", "2015-07-29 15:46:07.758945"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:24.614718"], ["updated_at", "2015-07-29 15:46:24.614718"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:24.633485"], ["updated_at", "2015-07-29 15:46:24.633485"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:24.639736"], ["updated_at", "2015-07-29 15:46:24.639736"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:24.645409"], ["updated_at", "2015-07-29 15:46:24.645409"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:24.649136"], ["updated_at", "2015-07-29 15:46:24.649136"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:46:24.652371"], ["updated_at", "2015-07-29 15:46:24.652371"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:08.996558"], ["updated_at", "2015-07-29 15:49:08.996558"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:09.011902"], ["updated_at", "2015-07-29 15:49:09.011902"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:09.017190"], ["updated_at", "2015-07-29 15:49:09.017190"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:09.022577"], ["updated_at", "2015-07-29 15:49:09.022577"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:09.027010"], ["updated_at", "2015-07-29 15:49:09.027010"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:09.030580"], ["updated_at", "2015-07-29 15:49:09.030580"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.134804"], ["updated_at", "2015-07-29 15:49:40.134804"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.149448"], ["updated_at", "2015-07-29 15:49:40.149448"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.155004"], ["updated_at", "2015-07-29 15:49:40.155004"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.156135"], ["updated_at", "2015-07-29 15:49:40.156135"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.160466"], ["updated_at", "2015-07-29 15:49:40.160466"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.161650"], ["updated_at", "2015-07-29 15:49:40.161650"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.165322"], ["updated_at", "2015-07-29 15:49:40.165322"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.166749"], ["updated_at", "2015-07-29 15:49:40.166749"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:49:40.170422"], ["updated_at", "2015-07-29 15:49:40.170422"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:02.028048"], ["updated_at", "2015-07-29 15:50:02.028048"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:02.042973"], ["updated_at", "2015-07-29 15:50:02.042973"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:02.048813"], ["updated_at", "2015-07-29 15:50:02.048813"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:02.055096"], ["updated_at", "2015-07-29 15:50:02.055096"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:02.060236"], ["updated_at", "2015-07-29 15:50:02.060236"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:02.064174"], ["updated_at", "2015-07-29 15:50:02.064174"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:05.517220"], ["updated_at", "2015-07-29 15:50:05.517220"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:05.535617"], ["updated_at", "2015-07-29 15:50:05.535617"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:05.542930"], ["updated_at", "2015-07-29 15:50:05.542930"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:05.549476"], ["updated_at", "2015-07-29 15:50:05.549476"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:05.552993"], ["updated_at", "2015-07-29 15:50:05.552993"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:50:05.556613"], ["updated_at", "2015-07-29 15:50:05.556613"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:38.613507"], ["updated_at", "2015-07-29 15:51:38.613507"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:38.621954"], ["updated_at", "2015-07-29 15:51:38.621954"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:38.626760"], ["updated_at", "2015-07-29 15:51:38.626760"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:38.631238"], ["updated_at", "2015-07-29 15:51:38.631238"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:38.646979"], ["updated_at", "2015-07-29 15:51:38.646979"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:38.652689"], ["updated_at", "2015-07-29 15:51:38.652689"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:49.317329"], ["updated_at", "2015-07-29 15:51:49.317329"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:49.324661"], ["updated_at", "2015-07-29 15:51:49.324661"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:49.329486"], ["updated_at", "2015-07-29 15:51:49.329486"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:49.334557"], ["updated_at", "2015-07-29 15:51:49.334557"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:49.347509"], ["updated_at", "2015-07-29 15:51:49.347509"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:51:49.352516"], ["updated_at", "2015-07-29 15:51:49.352516"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:52:15.217961"], ["updated_at", "2015-07-29 15:52:15.217961"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:52:15.236945"], ["updated_at", "2015-07-29 15:52:15.236945"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:52:15.242668"], ["updated_at", "2015-07-29 15:52:15.242668"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:52:15.249615"], ["updated_at", "2015-07-29 15:52:15.249615"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:52:15.252391"], ["updated_at", "2015-07-29 15:52:15.252391"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:52:15.254862"], ["updated_at", "2015-07-29 15:52:15.254862"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:44.339413"], ["updated_at", "2015-07-29 15:53:44.339413"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:44.344952"], ["updated_at", "2015-07-29 15:53:44.344952"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:44.348138"], ["updated_at", "2015-07-29 15:53:44.348138"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:44.352347"], ["updated_at", "2015-07-29 15:53:44.352347"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:44.368406"], ["updated_at", "2015-07-29 15:53:44.368406"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:44.373933"], ["updated_at", "2015-07-29 15:53:44.373933"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:53.228182"], ["updated_at", "2015-07-29 15:53:53.228182"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:53.243151"], ["updated_at", "2015-07-29 15:53:53.243151"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:53.248583"], ["updated_at", "2015-07-29 15:53:53.248583"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:53.254058"], ["updated_at", "2015-07-29 15:53:53.254058"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:53.258330"], ["updated_at", "2015-07-29 15:53:53.258330"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:53:53.261698"], ["updated_at", "2015-07-29 15:53:53.261698"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:55:43.306288"], ["updated_at", "2015-07-29 15:55:43.306288"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:55:43.321126"], ["updated_at", "2015-07-29 15:55:43.321126"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:55:43.327307"], ["updated_at", "2015-07-29 15:55:43.327307"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:55:43.333396"], ["updated_at", "2015-07-29 15:55:43.333396"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:55:43.338329"], ["updated_at", "2015-07-29 15:55:43.338329"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:55:43.342967"], ["updated_at", "2015-07-29 15:55:43.342967"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:09.541817"], ["updated_at", "2015-07-29 15:56:09.541817"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:09.556901"], ["updated_at", "2015-07-29 15:56:09.556901"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:09.562329"], ["updated_at", "2015-07-29 15:56:09.562329"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:09.567378"], ["updated_at", "2015-07-29 15:56:09.567378"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:09.570561"], ["updated_at", "2015-07-29 15:56:09.570561"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:09.573395"], ["updated_at", "2015-07-29 15:56:09.573395"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:23.474240"], ["updated_at", "2015-07-29 15:56:23.474240"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:23.479839"], ["updated_at", "2015-07-29 15:56:23.479839"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:23.483335"], ["updated_at", "2015-07-29 15:56:23.483335"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:23.487168"], ["updated_at", "2015-07-29 15:56:23.487168"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:23.499843"], ["updated_at", "2015-07-29 15:56:23.499843"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:56:23.505883"], ["updated_at", "2015-07-29 15:56:23.505883"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:40.249604"], ["updated_at", "2015-07-29 15:57:40.249604"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:40.265862"], ["updated_at", "2015-07-29 15:57:40.265862"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:40.271795"], ["updated_at", "2015-07-29 15:57:40.271795"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:40.277401"], ["updated_at", "2015-07-29 15:57:40.277401"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:40.280554"], ["updated_at", "2015-07-29 15:57:40.280554"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:40.283637"], ["updated_at", "2015-07-29 15:57:40.283637"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:46.011880"], ["updated_at", "2015-07-29 15:57:46.011880"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:46.018856"], ["updated_at", "2015-07-29 15:57:46.018856"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:46.022183"], ["updated_at", "2015-07-29 15:57:46.022183"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:46.025441"], ["updated_at", "2015-07-29 15:57:46.025441"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:46.040155"], ["updated_at", "2015-07-29 15:57:46.040155"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 15:57:46.046597"], ["updated_at", "2015-07-29 15:57:46.046597"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 16:02:16.507001"], ["updated_at", "2015-07-29 16:02:16.507001"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 16:02:16.512975"], ["updated_at", "2015-07-29 16:02:16.512975"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 16:02:16.516478"], ["updated_at", "2015-07-29 16:02:16.516478"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 16:02:16.529736"], ["updated_at", "2015-07-29 16:02:16.529736"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mr. \#{n}"], ["nic_name", "nic \#{n}"], ["created_at", "2015-07-29 16:02:16.535314"], ["updated_at", "2015-07-29 16:02:16.535314"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m

@@ -1,0 +1,2431 @@
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150709045236')
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150709045236')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/pm035773/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/pm035773/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:16:45 +0530
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.1.0) lib/request_store/middleware.rb:8:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/pm035773/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/pm035773/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/pm035773/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (46.6ms)
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150709045236')
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150709045236')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-07-29 20:17:11 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 14ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:18:11 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 1935ms (Views: 1932.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:18:45 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 280ms (Views: 266.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:18:49 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 53ms (Views: 23.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:22:07 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `new' for #<#<Class:0x007ffea4df6b28>:0x007ffeac08b8f0>):
+    2:   %ul
+    3:     %li{ 'ng-repeat' => 'user in users' }
+    4:       {{user.name}}
+    5:   =link_to(new)    
+  app/views/users/index.html.haml:5:in `_app_views_users_index_html_haml__1391334116096685086_70365892330700'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (53.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (68.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:22:21 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:22:24 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:22:26 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:23:11 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined local variable or method `new_use' for #<#<Class:0x007f86e2ddf4f8>:0x007f86e2dd5de0>):
+    2:   %ul
+    3:     %li{ 'ng-repeat' => 'user in users' }
+    4:       {{user.name}}
+    5:   =link_to('new',new_use)    
+  app/views/users/index.html.haml:5:in `_app_views_users_index_html_haml__2119996212829084048_70108654120580'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (29.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:23:14 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined local variable or method `new_use' for #<#<Class:0x007f86e2ddf4f8>:0x007f86eac1e288>):
+    2:   %ul
+    3:     %li{ 'ng-repeat' => 'user in users' }
+    4:       {{user.name}}
+    5:   =link_to('new',new_use)    
+  app/views/users/index.html.haml:5:in `_app_views_users_index_html_haml__2119996212829084048_70108654120580'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (28.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:23:24 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined local variable or method `new_use' for #<#<Class:0x007f86e2ddf4f8>:0x007f86ea92b418>):
+    2:   %ul
+    3:     %li{ 'ng-repeat' => 'user in users' }
+    4:       {{user.name}}
+    5:   =link_to('new',new_use)    
+  app/views/users/index.html.haml:5:in `_app_views_users_index_html_haml__2119996212829084048_70108654120580'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:23:41 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined local variable or method `new_use_path' for #<#<Class:0x007f86e2ddf4f8>:0x007f86e2be51c0>):
+    2:   %ul
+    3:     %li{ 'ng-repeat' => 'user in users' }
+    4:       {{user.name}}
+    5:   =link_to('new',new_use_path)    
+  app/views/users/index.html.haml:5:in `_app_views_users_index_html_haml__2119996212829084048_70108653222400'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (34.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:24:40 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 251ms (Views: 250.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 20:25:31 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:25:35 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (25.2ms)
+  Rendered users/new.html.haml within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `test_field' for #<ActionView::Helpers::FormBuilder:0x007f86ead71518>):
+    10:     = f.label :name
+    11:     = f.text_field :name
+    12:     = f.label :age
+    13:     = f.test_field :age
+    14:   .actions
+    15:     = f.submit 'Save'
+  app/views/users/_form.html.haml:13:in `block in _app_views_users__form_html_haml__3190089098594375496_70108720576540'
+  app/views/users/_form.html.haml:1:in `_app_views_users__form_html_haml__3190089098594375496_70108720576540'
+  app/views/users/new.html.haml:3:in `_app_views_users_new_html_haml___866562866139356776_70108720982440'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (29.4ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:25:35 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (12.1ms)
+  Rendered users/new.html.haml within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `test_field' for #<ActionView::Helpers::FormBuilder:0x007f86ec889f08>):
+    10:     = f.label :name
+    11:     = f.text_field :name
+    12:     = f.label :age
+    13:     = f.test_field :age
+    14:   .actions
+    15:     = f.submit 'Save'
+  app/views/users/_form.html.haml:13:in `block in _app_views_users__form_html_haml__3190089098594375496_70108735636160'
+  app/views/users/_form.html.haml:1:in `_app_views_users__form_html_haml__3190089098594375496_70108735636160'
+  app/views/users/new.html.haml:3:in `_app_views_users_new_html_haml___866562866139356776_70108735757500'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.5ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:26:03 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.3ms)
+  Rendered users/new.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 20:26:14 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rUGRiNnv8R/NKpaRt1knAMlvHIkEUVOa2FHhgMa8A6/QjMigwoCVooQYO+7IDNPQQY+vSC1buBNvHftrS+n8wQ==", "user"=>{"name"=>"micky", "age"=>"Mouse"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "micky"], ["age", "Mouse"], ["created_at", "2015-07-29 14:56:14.232121"], ["updated_at", "2015-07-29 14:56:14.232121"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for ::1 at 2015-07-29 20:26:14 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:26:17 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:26:18 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.9ms)
+  Rendered users/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:26:20 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 20:26:20 +0530
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:28:20 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:28:23 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.7ms)
+  Rendered users/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 20:28:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PVlo4AplcwDz3NPJGSfvbrR3FBZdElwbwZx8Y+vqLxZAlDHIEQoXvbrufrZmchu+PJen13QYt5J20GaIZr/QeA==", "user"=>{"name"=>"adf", "age"=>"adf"}, "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "adf"], ["age", "adf"], ["created_at", "2015-07-29 14:58:26.975745"], ["updated_at", "2015-07-29 14:58:26.975745"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2" for ::1 at 2015-07-29 20:28:26 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:28:29 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:28:32 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 20:28:32 +0530
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:37:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 20:37:09 +0530
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:37:11 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 20:37:11 +0530
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:37:12 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (4.5ms)
+  Rendered users/new.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `nic_name' for #<User:0x007f86e36e2cf8>):
+    10:     = f.label :name
+    11:     = f.text_field :name
+    12:     = f.label :last_name
+    13:     = f.text_field :nic_name
+    14:   .actions
+    15:     = f.submit 'Save'
+  app/views/users/_form.html.haml:13:in `block in _app_views_users__form_html_haml__3190089098594375496_70108658932600'
+  app/views/users/_form.html.haml:1:in `_app_views_users__form_html_haml__3190089098594375496_70108658932600'
+  app/views/users/new.html.haml:3:in `_app_views_users_new_html_haml___866562866139356776_70108720982440'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:37:12 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (5.0ms)
+  Rendered users/new.html.haml within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `nic_name' for #<User:0x007f86ecc63318>):
+    10:     = f.label :name
+    11:     = f.text_field :name
+    12:     = f.label :last_name
+    13:     = f.text_field :nic_name
+    14:   .actions
+    15:     = f.submit 'Save'
+  app/views/users/_form.html.haml:13:in `block in _app_views_users__form_html_haml__3190089098594375496_70108737325960'
+  app/views/users/_form.html.haml:1:in `_app_views_users__form_html_haml__3190089098594375496_70108737325960'
+  app/views/users/new.html.haml:3:in `_app_views_users_new_html_haml___866562866139356776_70108735757500'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (28.4ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:37:35 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.3ms)
+  Rendered users/new.html.haml within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `nic_name' for #<User:0x007f86ecb9a8f0>):
+    10:     = f.label :name
+    11:     = f.text_field :name
+    12:     = f.label :last_name
+    13:     = f.text_field :nic_name
+    14:   .actions
+    15:     = f.submit 'Save'
+  app/views/users/_form.html.haml:13:in `block in _app_views_users__form_html_haml__3190089098594375496_70108737325960'
+  app/views/users/_form.html.haml:1:in `_app_views_users__form_html_haml__3190089098594375496_70108737325960'
+  app/views/users/new.html.haml:3:in `_app_views_users_new_html_haml___866562866139356776_70108735757500'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.7ms)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150709045236)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "nic_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150709045236"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/users/" for ::1 at 2015-07-29 20:39:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (9.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 324ms (Views: 312.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/" for ::1 at 2015-07-29 20:40:24 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 20:40:24 +0530
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:40:26 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (12.0ms)
+  Rendered users/new.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:40:32 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.4ms)
+  Rendered users/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 20:40:32 +0530
+
+
+Started POST "/users" for ::1 at 2015-07-29 20:40:50 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QD8hk6w4UwAJG7QBmJyzq4FC+hMpviPJT93CK714ch498ni7t1c3vUApGX7nyUd7CaJJ0gC0yED4kdjAMC2NcA==", "user"=>{"name"=>"peter parcker", "nic_name"=>"spider man"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "peter parcker"], ["nic_name", "spider man"], ["created_at", "2015-07-29 15:10:50.546406"], ["updated_at", "2015-07-29 15:10:50.546406"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 8ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for ::1 at 2015-07-29 20:40:50 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 72ms (Views: 65.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:40:53 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:40:55 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 20:40:55 +0530
+
+
+Started GET "/users/edit" for ::1 at 2015-07-29 20:41:15 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=edit):
+  app/controllers/users_controller.rb:68:in `set_user'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (29.7ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-07-29 20:41:34 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered users/edit.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 20:41:40 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 20:41:44 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.9ms)
+  Rendered users/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 20:41:54 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dnPenC6RjUDcbYPzcylFusHDeSFG7m5JhM5hGFUJKvILvoe0Nf7p/ZVfLowMfLFqSSPK4G/khcAzgnvz2FzVnA==", "user"=>{"name"=>"clarck", "nic_name"=>"super man"}, "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "clarck"], ["nic_name", "super man"], ["created_at", "2015-07-29 15:11:54.028941"], ["updated_at", "2015-07-29 15:11:54.028941"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/2" for ::1 at 2015-07-29 20:41:54 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2015-07-29 20:41:56 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_form.html.haml (1.2ms)
+  Rendered users/edit.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/2" for ::1 at 2015-07-29 20:49:32 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nMUIP+vDICAmv7t8q+ZelobCbvaA1Rj/+5rZdFNWX6jhCFEX8KxEnW+NFgPUs6pGDiLdN6nf83ZM1sOf3gOgxg==", "user"=>{"name"=>"clarck", "nic_name"=>""}, "commit"=>"Save", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "nic_name" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["nic_name", ""], ["updated_at", "2015-07-29 15:19:32.152795"], ["id", 2]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/2" for ::1 at 2015-07-29 20:49:32 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 21:31:24 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:77: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:77: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (43.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 21:31:24 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:77: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:77: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (16.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (31.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 21:31:52 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:31:55 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.3ms)
+  Rendered users/new.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:31:57 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vfQ1NjjVLqNU2YHU8Mey076fv3vbOXgoZVhrPPrjkYrAOWweI7pKHh3rLKuPkkYDNn8MuvIzk6HSFHHXd7Zu5A==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (wrong constant name /USERS/INDEX):
+  app/controllers/users_controller.rb:31:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.8ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:32:35 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered users/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:32:37 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/WduzMm+jxeylYhM7Oo+64vPLXJk7Dc9ZUxPVLs3JC2Aqjfk0tHrqvunJTOTv8o7Ay+es03m3LTSAFW/NmLbQw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (undefined local variable or method `ew_user_path' for #<UsersController:0x007f907c68b500>):
+  app/controllers/users_controller.rb:31:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (31.6ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:32:52 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered users/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 45ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:32:54 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SCK8Zn+K0x0UAeFhIiJA8wzmNMqHHnyQCC4WWrXCheU17+VOZOW3oF0zTB5dd7QjhAaHC64Ulxm/YgyxOJd6iw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (wrong constant name /USERS/NEW):
+  app/controllers/users_controller.rb:31:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (29.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:34:57 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+    redirect_to users , notice 'User was not created '
+                                ^):
+  app/controllers/users_controller.rb:31: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:36:00 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+    {redirect_to users , notice 'User creation failed.' }
+                      ^
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+    {redirect_to users , notice 'User creation failed.' }
+                                 ^
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected '}', expecting keyword_end
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/controllers/users_controller.rb:31: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/controllers/users_controller.rb:31: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.9ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:36:20 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected ',', expecting ')'
+    redirect_to (users , notice 'User creation failed.')
+                        ^
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected ')', expecting keyword_end
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:31: syntax error, unexpected ',', expecting ')'
+  app/controllers/users_controller.rb:31: syntax error, unexpected ')', expecting keyword_end
+  app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (28.8ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:36:34 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected ',', expecting ')'
+    redirect_to (users , notice: 'User creation failed.')
+                        ^
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected ')', expecting keyword_end
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:31: syntax error, unexpected ',', expecting ')'
+  app/controllers/users_controller.rb:31: syntax error, unexpected ')', expecting keyword_end
+  app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.8ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:36:36 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected ',', expecting ')'
+    redirect_to (users , notice: 'User creation failed.')
+                        ^
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:31: syntax error, unexpected ')', expecting keyword_end
+/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:31: syntax error, unexpected ',', expecting ')'
+  app/controllers/users_controller.rb:31: syntax error, unexpected ')', expecting keyword_end
+  app/controllers/users_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.5ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:36:54 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered users/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:36:56 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E+Xq11HM1MZwkfMES9SnoFFVltFHUAEphJSKK7rz4EVuKLP/SqOwezmjXns0gVNw2bUlEG5a6qAz2JDAN6YfKw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `users' for #<UsersController:0x007f907c1411f8>):
+  app/controllers/users_controller.rb:31:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.7ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:37:07 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E+Xq11HM1MZwkfMES9SnoFFVltFHUAEphJSKK7rz4EVuKLP/SqOwezmjXns0gVNw2bUlEG5a6qAz2JDAN6YfKw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (undefined local variable or method `users' for #<UsersController:0x007f907d105c88>):
+  app/controllers/users_controller.rb:31:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.3ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 21:37:26 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 21:37:29 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 21:37:29 +0530
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:37:30 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered users/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:37:31 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xCz86SB+Q3BRwNilIUhHvrlXgBdHiDcYDu3wKjNw3xq54aXBOxEnzRjyddpeHbNuMbcz1m6C3JG5oerBviUgdA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000/users
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:34:in `block in create'
+  app/controllers/users_controller.rb:33:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.3ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:37:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xCz86SB+Q3BRwNilIUhHvrlXgBdHiDcYDu3wKjNw3xq54aXBOxEnzRjyddpeHbNuMbcz1m6C3JG5oerBviUgdA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000/users
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:34:in `block in create'
+  app/controllers/users_controller.rb:33:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.7ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 21:38:42 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 21:39:01 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (29.5ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:39:04 +0530
+
+SyntaxError (/Users/pm035773/ROR/blr_anlytics/app/controllers/users_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.2ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:39:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST60ZyEt7SAPbs+npHTQllnmwecChUuhjE55IDJ66iA08+1POkKJnUZcYtjbISRG0QZyJiuPoCg7AmPLvy8VTg==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (too few arguments):
+  app/controllers/users_controller.rb:31:in `format'
+  app/controllers/users_controller.rb:31:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.4ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:39:49 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST60ZyEt7SAPbs+npHTQllnmwecChUuhjE55IDJ66iA08+1POkKJnUZcYtjbISRG0QZyJiuPoCg7AmPLvy8VTg==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (too few arguments):
+  app/controllers/users_controller.rb:31:in `format'
+  app/controllers/users_controller.rb:31:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.9ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 21:40:13 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:40:16 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST60ZyEt7SAPbs+npHTQllnmwecChUuhjE55IDJ66iA08+1POkKJnUZcYtjbISRG0QZyJiuPoCg7AmPLvy8VTg==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000/users
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:36:in `block in create'
+  app/controllers/users_controller.rb:35:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:40:23 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST60ZyEt7SAPbs+npHTQllnmwecChUuhjE55IDJ66iA08+1POkKJnUZcYtjbISRG0QZyJiuPoCg7AmPLvy8VTg==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000/users
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:36:in `block in create'
+  app/controllers/users_controller.rb:35:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.4ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:41:39 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST60ZyEt7SAPbs+npHTQllnmwecChUuhjE55IDJ66iA08+1POkKJnUZcYtjbISRG0QZyJiuPoCg7AmPLvy8VTg==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000/users/new
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:34:in `block in create'
+  app/controllers/users_controller.rb:33:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (28.2ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:42:08 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered users/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 82.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:42:10 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oZKdsenozkyaiqMReg8qd+dA01MQj/xxDDEpvuxyh+rcX8SZ8oeq8dO4Dm4FWt6nb6BgkjmFF/i7fTNVYSd4hA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `blank' for nil:NilClass):
+  app/controllers/users_controller.rb:28:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.8ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:42:24 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered users/new.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 36ms (Views: 29.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:42:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DRTRuMtZOawNCFQNuDFaOUHzK7OucN8/eHC1VVzgHXNw2YiQ0DZdEUQ6+XLHZK7pyROYcod6NLbPPK++0bXiHQ==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `nil' for nil:NilClass):
+  app/controllers/users_controller.rb:28:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (32.8ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:42:48 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DRTRuMtZOawNCFQNuDFaOUHzK7OucN8/eHC1VVzgHXNw2YiQ0DZdEUQ6+XLHZK7pyROYcod6NLbPPK++0bXiHQ==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["nic_name", ""], ["created_at", "2015-07-29 16:12:48.094910"], ["updated_at", "2015-07-29 16:12:48.094910"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-29 21:42:48 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:44:09 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DRTRuMtZOawNCFQNuDFaOUHzK7OucN8/eHC1VVzgHXNw2YiQ0DZdEUQ6+XLHZK7pyROYcod6NLbPPK++0bXiHQ==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["nic_name", ""], ["created_at", "2015-07-29 16:14:09.121387"], ["updated_at", "2015-07-29 16:14:09.121387"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 10ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users/4" for ::1 at 2015-07-29 21:44:09 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:44:42 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DRTRuMtZOawNCFQNuDFaOUHzK7OucN8/eHC1VVzgHXNw2YiQ0DZdEUQ6+XLHZK7pyROYcod6NLbPPK++0bXiHQ==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000/users/new
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:34:in `block in create'
+  app/controllers/users_controller.rb:33:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.2ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 21:45:29 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:45:32 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered users/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:45:33 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K1m1W2ZaZMCcA6t/535JaunF/gjQyACvWc/7XITvq7dWlOxzfTUAfdUxBgCYK726YSVNyfnC6ybug+G3CbpU2Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:34:in `block in create'
+  app/controllers/users_controller.rb:33:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.0ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.7ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:46:00 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y8lZybxidNDkbOJ+x1KsHd9mjFsfF3BcfTWdm+nARuEeBADhpw0Qba1eTwG4B1jNV4Y/mjYdm9XKeYdwZJW5jw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000/users
+Redirected to 
+Completed   in 108678ms
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:47:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (15.7ms)
+  Rendered users/new.html.haml within layouts/application (22.6ms)
+Completed 200 OK in 343ms (Views: 327.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 21:47:58 +0530
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:00 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Redirected to 
+Completed 500 Internal Server Error in 31940ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:37:in `block in create'
+  app/controllers/users_controller.rb:36:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.7ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:40 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy1sjFYf+RWCB5cw5YSRwaLyKw91a9qXL7MByc87XCL64DWkTXCdqMs1Ok+a0WURKhKYzlxhMR6Y/xsiQm6jTA==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-07-29 21:48:50 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (11.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 291ms (Views: 281.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-29 21:48:50 +0530
+
+
+Started GET "/users/new" for ::1 at 2015-07-29 21:48:52 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (7.6ms)
+  Rendered users/new.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:53 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/gFDdhP9YS4bCrgQ8xZ8J9jOs6h/e7jbq9zXlNJ+k0+NVwlwyCROfFeh588ma0gF4OJD4j3BWrZ42m13hwFIw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:53 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/gFDdhP9YS4bCrgQ8xZ8J9jOs6h/e7jbq9zXlNJ+k0+NVwlwyCROfFeh588ma0gF4OJD4j3BWrZ42m13hwFIw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:53 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/gFDdhP9YS4bCrgQ8xZ8J9jOs6h/e7jbq9zXlNJ+k0+NVwlwyCROfFeh588ma0gF4OJD4j3BWrZ42m13hwFIw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:53 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/gFDdhP9YS4bCrgQ8xZ8J9jOs6h/e7jbq9zXlNJ+k0+NVwlwyCROfFeh588ma0gF4OJD4j3BWrZ42m13hwFIw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:53 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/gFDdhP9YS4bCrgQ8xZ8J9jOs6h/e7jbq9zXlNJ+k0+NVwlwyCROfFeh588ma0gF4OJD4j3BWrZ42m13hwFIw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:53 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/gFDdhP9YS4bCrgQ8xZ8J9jOs6h/e7jbq9zXlNJ+k0+NVwlwyCROfFeh588ma0gF4OJD4j3BWrZ42m13hwFIw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:48:53 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/gFDdhP9YS4bCrgQ8xZ8J9jOs6h/e7jbq9zXlNJ+k0+NVwlwyCROfFeh588ma0gF4OJD4j3BWrZ42m13hwFIw==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:19 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:22 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:22 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:22 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:22 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:22 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:22 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:33 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:33 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:33 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:33 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-29 21:49:33 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z19B4b9aVzSK6tj48JLRsDc765YEDrBfRHz6YVtBkL+ykhjJpDUzicPYdYePxyVgv9tYVy0EW9bzMOCK1hRv0Q==", "user"=>{"name"=>"", "nic_name"=>""}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150709045236)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "nic_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150709045236"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-07-30 10:00:57 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 58ms (Views: 52.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:00:57 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-30 10:01:02 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered users/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:20 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+qLSjdC234zKPYix+kvxYwKXuusyZvvWSCxpE1llZe+Hb4uly9m7MYMPJc6FHgWzincJKhtsEF//YHP41DCagQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:05:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Redirected to http://localhost:3000users#new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:06:07 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwnUEr52Bisa6APAST/48atNPeM56JuGoXehlJZMwq+6xI06pRlillParr82agwhI62OIhDicA8WO7t/Gxk9wQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:30:in `block in create'
+  app/controllers/users_controller.rb:29:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (45.9ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-30 10:06:16 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (4.8ms)
+  Rendered users/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-30 10:06:16 +0530
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:06:30 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dZYtbrnWOgNtVKRQrNl1zkOf1YKi+BUVAduzhwjB0TcIW3RGorleviRmCS/TjIEey39mQ4vy/py2l6lshZQuWQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/users_controller.rb:30:in `block in create'
+  app/controllers/users_controller.rb:29:in `create'
+
+
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.7ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.8ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pm035773/.rvm/gems/ruby-2.1.5@blr_analytics/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.4ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:06:51 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dZYtbrnWOgNtVKRQrNl1zkOf1YKi+BUVAduzhwjB0TcIW3RGorleviRmCS/TjIEey39mQ4vy/py2l6lshZQuWQ==", "user"=>{"name"=>"Clarck", "nic_name"=>"Super Man"}, "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Clarck"], ["nic_name", "Super Man"], ["created_at", "2015-07-30 04:36:51.523346"], ["updated_at", "2015-07-30 04:36:51.523346"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 20ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/users/1" for ::1 at 2015-07-30 10:06:51 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-07-30 10:06:55 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-30 10:06:57 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered users/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:07:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mg7Z8UTlnEzRqe7BsDRSYk9y1zGzML54l+1a6Sxuw3Pnw4DZX4r48ZibQ77PYaayx5Jk8Jo6VfEgoUACoTs8HQ==", "user"=>{"name"=>"Bruce Wane", "nic_name"=>"Bat Man"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Wane"], ["nic_name", "Bat Man"], ["created_at", "2015-07-30 04:37:26.276182"], ["updated_at", "2015-07-30 04:37:26.276182"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2" for ::1 at 2015-07-30 10:07:26 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-30 10:07:55 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-07-30 10:07:57 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-30 10:07:57 +0530
+
+
+Started GET "/users/new" for ::1 at 2015-07-30 10:07:59 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (1.2ms)
+  Rendered users/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-30 10:08:10 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"72mqyqohvNKgAkA72Zw2B4yH9zpGRCdOzBObxvGmqZGSpPPisU7Yb+kw7USmycLXBGdE+29OzMd7X4EtfPNW/w==", "user"=>{"name"=>"Peter Parker", "nic_name"=>"Spider Man"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "nic_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Peter Parker"], ["nic_name", "Spider Man"], ["created_at", "2015-07-30 04:38:10.057459"], ["updated_at", "2015-07-30 04:38:10.057459"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 10:08:10 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/show.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/3" for ::1 at 2015-07-30 10:08:13 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-30 10:08:13 +0530
+
+
+Started GET "/users" for ::1 at 2015-07-30 10:08:16 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-07-30 10:08:18 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2015-07-30 10:08:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.9ms)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 128ms (Views: 118.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/scaffolds.self-7f45cbb57d607d1d50538f8d4f09bee60e486c3cd9c323e7eeffaa9253e32439.css?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/angular.self-da79b1046e100c93adb9d40e39ad9262f756d06c61ed623fc32dd94fdbc51325.js?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/users.self-7fe4a0bd8c78a7cf3e237db397cfd9849deb2ba87191e4d2aea6a6d7bfc9d840.js?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2015-07-30 13:19:01 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-30 13:19:06 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 90ms (Views: 87.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-30 13:19:12 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.1ms)
