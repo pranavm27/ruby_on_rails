@@ -1,0 +1,31 @@
+## : rspec and FactoryGirls
+
+### Setting up Gon
+- Gemfile add line 
+```
+gem 'rspec'
+```
+### Run the command
+```
+rails generate rspec:install
+```
+- We are now ready to use the functionality.
+
+### Basic structure 
+- Gemfile add line
+```
+RSpec.describe "something" do
+  context "in one context" do
+    it "does one thing" do
+    end
+    it "dose second thing"  do
+    end
+  end
+  context "in another context" do
+    it "does another thing" do
+    end
+    it "it dose second thig" do 
+    end
+  end
+end
+```
